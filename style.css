@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-size: 30px;
+}
+.container {
+    width: 100vw;
+    display: flex;
+    /*height: 100vh;*/
+}
+.panel {
+    height: 100vh;
+    flex: 1; /*makes each panel a flex item of the same width*/
+    border: red 1px solid; /*delete*/
+    background-color: gray;
+    display: flex; /*makes each panel a flex container of the <p>'s*/
+    flex-direction: column; /*default is horizontally, thus must state column to stack the <p>'s*/
+}
+p {
+    text-transform: uppercase;
+    font-family: Papyrus, fantasy, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #ffffff;
+    border: blue 1px solid; /*delete*/
+    /*justify-content: center; !*aligns horizontally as p tag does now span entire width of page*!*/
+    /*align-content: center; !*aligns content vertically*!*/
+}
+.panel > * {
+    margin: 0; /*removes initial margins*/
+    width: 100%;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center; /*aligns horizontally. Cannot use 'text-align' as <p> does not span entire width of page*/
+    align-items: center; /*aligns content vertically*/
+}
+.mainText {
+    font-size: 46px;
+}
