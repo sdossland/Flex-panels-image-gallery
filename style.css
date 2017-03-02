@@ -1,6 +1,10 @@
 body {
     margin: 0;
     font-size: 30px;
+    text-shadow: 2px 2px #000000;
+}
+.mainText {
+    font-size: 46px;
 }
 .container {
     width: 100vw;
@@ -23,6 +27,11 @@ p {
     /*justify-content: center; !*aligns horizontally as p tag does now span entire width of page*!*/
     /*align-content: center; !*aligns content vertically*!*/
 }
+
+.open {
+    
+}
+
 .panel > * {
     margin: 0; /*removes initial margins*/
     width: 100%;
@@ -31,6 +40,28 @@ p {
     justify-content: center; /*aligns horizontally. Cannot use 'text-align' as <p> does not span entire width of page*/
     align-items: center; /*aligns content vertically*/
 }
-.mainText {
-    font-size: 46px;
+.panel > *:first-child {
+    transform: translateY(-100%);
+}
+.panel > *:last-child {
+    transform: translateY(100%);
+}
+
+
+
+/*background images*/
+.panel1 {
+    background-image: url("./panelPics/1.jpg");
+}
+.panel2 {
+    background-image: url("./panelPics/2.jpg");
+}
+.panel3 {
+    background-image: url("./panelPics/3.jpg");
+}
+.panel4 {
+    background-image: url("./panelPics/4.jpg");
+}
+.panel5 {
+    background-image: url("./panelPics/5.jpg");
 }
